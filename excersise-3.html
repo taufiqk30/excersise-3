@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+  <h1>TABEL DATA</h1>
+    <div>
+        <table id="table" border="1"><tr>
+        <th>name</th>
+        <th>rotation_period</th>
+        <th>orbital_period</th>
+        <th>diameter</th>
+        <th>climate</th>
+        <th>gravity</th>
+        <th>terrain</th>
+        <th>surface_water</th>
+        <th>population</th>
+      <link rel="stylesheet" href="./src/css/excersise 3.css">
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                                  <td></td>
+                              </tr>
+                              <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+      
+   </table> 
+</div>
+</body>
+<script>
+        var array = [["Alderaan","24","364","12500","temperate","1 standard","grasslands, mountains","40","2000000000"],
+                     ["Yavin IV","24","4818","10200","temperate, tropical","1 standard","jungle, rainforests","8","1000"],
+                     ["Hoth", "23","549", "7200", "frozen", "1.1 standard","tundra, ice caves, mountain ranges", "100", "unknown"],
+                     ["Dagobah","23", "341","8900","murky","N/A","swamp, jungles","8","unknown"],
+                     ["Bespin","12","5110","118000","temperate","1.5 (surface), 1 standard (Cloud City)","gas giant","0","6000000"],
+                     ["Endor","18","402","4900","temperate","0.85 standard","forests, mountains, lakes","8","30000000"],
+                     ["Naboo","26","312","12120","temperate","1 standard","grassy hills, swamps, forests, mountains","12","4500000000"],
+                     ["Coruscant","24","368","12240","temperate","1 standard","cityscape, mountains","unknown","1000000000000"],
+                     ["Kamino","27","463","19720","temperate","1 standard","ocean","100","1000000000"],
+                     ["Geonosis","30","256","11370","temperate, arid","0.9 standard","rock, desert, mountain, barren","5","100000000000" ]]
+              array.sort();
+                    
+            table = document.getElementById("table");
+             //rows
+               for(var i = 1; i < table.rows.length; i++)
+             {
+               // cells
+               for(var j = 0; j < table.rows[i].cells.length; j++)
+               {
+                   table.rows[i].cells[j].innerHTML = array[i - 1][j];
+               }
+             }
+               for(var i = 0; i < array.length; i++)
+                {
+            
+               var newRow = table.insertRow(table.length);
+               for(var j = 0; j < array[i].length;j++)
+                    {             
+                cell.innerHTML = array[i][j];
+                    }
+                } 
+        </script>
+</html>
